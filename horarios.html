@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios - Sistema Académico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-mortarboard-fill me-2"></i>
+                Sistema Académico
+            </a>
+            <div class="d-flex">
+                <span class="navbar-text me-3">Usuario: Admin</span>
+                <button class="btn btn-outline-light btn-sm">
+                    <i class="bi bi-box-arrow-right me-1"></i> Salir
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-2">
+                <div class="sidebar">
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-speedometer2"></i> Dashboard
+                        </a>
+                        <a class="nav-link" href="planes-estudio.html">
+                            <i class="bi bi-journal-bookmark"></i> Planes de Estudio
+                        </a>
+                        <a class="nav-link active" href="horarios.html">
+                            <i class="bi bi-calendar-week"></i> Horarios
+                        </a>
+                        <a class="nav-link" href="evaluaciones.html">
+                            <i class="bi bi-clipboard-data"></i> Evaluaciones
+                        </a>
+                        <a class="nav-link" href="asistencia.html">
+                            <i class="bi bi-person-check"></i> Asistencia
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-lg-10">
+                <div class="module-content active">
+                    <h2 class="module-title">Control de Horarios</h2>
+                    
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h5 class="mb-0">Gestión de Horarios</h5>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="bi bi-plus-circle me-1"></i> Generar Horarios
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Entradas</th>
+                                            <th>Salidas</th>
+                                            <th>Justificación</th>
+                                            <th>Estado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Plan de estudios</td>
+                                            <td>Horario por grupo</td>
+                                            <td>Horario oficial de cada grupo</td>
+                                            <td><span class="badge bg-success">Completado</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Oferta académica</td>
+                                            <td>Horario por docente</td>
+                                            <td>Horario individual de cada profesor</td>
+                                            <td><span class="badge bg-success">Completado</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Disponibilidad</td>
+                                            <td>Reporte de conflictos</td>
+                                            <td>Informe de problemas en horarios</td>
+                                            <td><span class="badge bg-warning">Pendiente</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">Horario: Grupo IS-701</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-sm">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Hora</th>
+                                                    <th>Lunes</th>
+                                                    <th>Martes</th>
+                                                    <th>Miércoles</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>07:00-08:30</td>
+                                                    <td>Base de datos</td>
+                                                    <td>Programación</td>
+                                                    <td>Base de datos</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>08:30-10:00</td>
+                                                    <td>Inteligencia Artificial</td>
+                                                    <td>Cálculo</td>
+                                                    <td>Inteligencia Artificial</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10:00-11:30</td>
+                                                    <td>Redes</td>
+                                                    <td>Ética</td>
+                                                    <td>Redes</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">Reporte de Conflictos</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="alert alert-warning">
+                                        <i class="bi bi-exclamation-triangle me-2"></i> 
+                                        <strong>Conflicto de horario:</strong> Prof. González tiene superposición el Martes
+                                    </div>
+                                    <div class="alert alert-info">
+                                        <i class="bi bi-info-circle me-2"></i> 
+                                        <strong>Aula no disponible:</strong> Aula B203 en mantenimiento
+                                    </div>
+                                    <div class="alert alert-success">
+                                        <i class="bi bi-check-circle me-2"></i> 
+                                        <strong>Sin conflictos:</strong> Todos los grupos tienen horario
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
