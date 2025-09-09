@@ -136,30 +136,17 @@
         }
     </style>-->
 </head>
+
 <header>
     <!-- Header - Exactamente como lo proporcionaste -->
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header').innerHTML = data;
-            });
-    </script>
+    <iframe src="/header.html" style="width: 100%; border: none;"></iframe> 
 </header>
 <body>
     <!-- Navbar -->
-
-
     <div class="container-fluid">
         <div class="row">
-            <!-- Sidebar - Exactamente como lo proporcionaste -->
-            <script>
-                fetch('sidebar.html')
-                    .then(response => response.text())
-                    .then(data => {
-                        document.body.insertAdjacentHTML('afterbegin', data);
-                    });
-            </script>
+            <!-- Sidebar -->
+            <iframe class="col-lg-2" src="/sidebar.html"></iframe>
             <!-- Main Content -->
             <div class="col-lg-10">
                 <div class="main-content mt-4">
