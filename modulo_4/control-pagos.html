@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Pagos - Control Administrativo y Financiero</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-chart-line me-2"></i>Control Administrativo y Financiero
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cobro-colegiaturas.html"><i class="fas fa-money-check-alt me-1"></i>Cobro de Colegiaturas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="becas.html"><i class="fas fa-award me-1"></i>Becas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="control-pagos.html"><i class="fas fa-file-invoice-dollar me-1"></i>Control de Pagos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="estados-cuenta.html"><i class="fas fa-file-contract me-1"></i>Estados de Cuenta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container main-content">
+        <!-- Encabezado -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1 class="h3"><i class="fas fa-file-invoice-dollar me-2 text-warning"></i>Control de Pagos</h1>
+                    <button class="btn btn-warning">
+                        <i class="fas fa-plus me-1"></i>Nuevo Pago
+                    </button>
+                </div>
+                <p class="text-muted">Gestión de pagos a proveedores, docentes y personal administrativo</p>
+            </div>
+        </div>
+
+        <!-- Información del proceso -->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Entradas</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Facturas de proveedores (CFDI)</li>
+                            <li class="list-group-item">Solicitudes de pago internas autorizadas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-warning text-dark">
+                        <h5 class="mb-0">Salidas</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Pagos autorizados a proveedores, docentes y personal administrativo</li>
+                            <li class="list-group-item">Órdenes de dispersión</li>
+                            <li class="list-group-item">Conciliación bancaria</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Funcionalidades -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="section-title">Funcionalidades</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-receipt fa-2x text-warning mb-3"></i>
+                                        <h5>Registro de Facturas</h5>
+                                        <p>Captura y validación de facturas de proveedores y documentos por pagar.</p>
+                                        <button class="btn btn-outline-warning btn-sm">Acceder</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-check-circle fa-2x text-warning mb-3"></i>
+                                        <h5>Autorización de Pagos</h5>
+                                        <p>Flujo de autorización para validar y aprobar solicitudes de pago.</p>
+                                        <button class="btn btn-outline-warning btn-sm">Acceder</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-file-export fa-2x text-warning mb-3"></i>
+                                        <h5>Conciliación Bancaria</h5>
+                                        <p>Proceso de conciliación entre los registros contables y los estados bancarios.</p>
+                                        <button class="btn btn-outline-warning btn-sm">Acceder</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla de ejemplo -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="section-title">Pagos Programados</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Proveedor/Beneficiario</th>
+                                        <th>Concepto</th>
+                                        <th>Monto</th>
+                                        <th>Fecha Programada</th>
+                                        <th>Estatus</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Proveedor ABC, S.A. de C.V.</td>
+                                        <td>Material de oficina</td>
+                                        <td>$15,250.00</td>
+                                        <td>25/01/2023</td>
+                                        <td><span class="badge bg-success">Pagado</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-outline-success">Ver Comprobante</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Prof. María González</td>
+                                        <td>Honorarios docentes Enero</td>
+                                        <td>$12,800.00</td>
+                                        <td>30/01/2023</td>
+                                        <td><span class="badge bg-warning">Por Autorizar</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-outline-warning">Autorizar</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Servicios de Limpieza Integral</td>
+                                        <td>Servicio mensual de limpieza</td>
+                                        <td>$8,500.00</td>
+                                        <td>05/02/2023</td>
+                                        <td><span class="badge bg-info">Programado</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-outline-info">Ver Detalles</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Control Administrativo y Financiero</h5>
+                    <p>Módulo 4 - Sistema de gestión integral</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Desarrollado por:<br>
+                    Miramontes Martñelarena Ana Gabriela<br>
+                    Larrea Holguín Brenda Lizeth<br>
+                    Lastiri Torres Sergio Eduardo<br>
+                    Loya Millán Jesús Daniel</p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p class="mb-0">© 2023 - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobro de Colegiaturas - Control Administrativo y Financiero</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-chart-line me-2"></i>Control Administrativo y Financiero
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cobro-colegiaturas.html"><i class="fas fa-money-check-alt me-1"></i>Cobro de Colegiaturas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="becas.html"><i class="fas fa-award me-1"></i>Becas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="control-pagos.html"><i class="fas fa-file-invoice-dollar me-1"></i>Control de Pagos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="estados-cuenta.html"><i class="fas fa-file-contract me-1"></i>Estados de Cuenta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container main-content">
+        <!-- Encabezado -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1 class="h3"><i class="fas fa-money-check-alt me-2 text-primary"></i>Cobro de Colegiaturas</h1>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus me-1"></i>Nuevo Cobro
+                    </button>
+                </div>
+                <p class="text-muted">Gestión de pagos de colegiaturas, generación de referencias bancarias y facturación electrónica</p>
+            </div>
+        </div>
+
+        <!-- Información del proceso -->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Entradas</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Referencias bancarias</li>
+                            <li class="list-group-item">Tabla de precios oficiales</li>
+                            <li class="list-group-item">Comprobantes de pago</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0">Salidas</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Estado de cuenta actualizado</li>
+                            <li class="list-group-item">Factura electrónica (CFDI)</li>
+                            <li class="list-group-item">Reporte de ingresos</li>
+                            <li class="list-group-item">Hora exacta de escoger materias y carga académica</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Funcionalidades -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="section-title">Funcionalidades</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-search-dollar fa-2x text-primary mb-3"></i>
+                                        <h5>Consulta de Adeudos</h5>
+                                        <p>Consulta el estado de cuenta de alumnos y verifica adeudos pendientes.</p>
+                                        <button class="btn btn-outline-primary btn-sm">Acceder</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-file-invoice fa-2x text-primary mb-3"></i>
+                                        <h5>Generación de CFDI</h5>
+                                        <p>Emite facturas electrónicas para los pagos realizados por los alumnos.</p>
+                                        <button class="btn btn-outline-primary btn-sm">Acceder</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-chart-bar fa-2x text-primary mb-3"></i>
+                                        <h5>Reportes de Ingresos</h5>
+                                        <p>Genera reportes detallados de los ingresos por concepto de colegiaturas.</p>
+                                        <button class="btn btn-outline-primary btn-sm">Acceder</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla de ejemplo -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="section-title">Registro de Pagos Recientes</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Alumno</th>
+                                        <th>Matrícula</th>
+                                        <th>Concepto</th>
+                                        <th>Monto</th>
+                                        <th>Fecha</th>
+                                        <th>Estatus</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Juan Pérez García</td>
+                                        <td>2023001</td>
+                                        <td>Colegiatura Enero 2023</td>
+                                        <td>$5,000.00</td>
+                                        <td>15/01/2023</td>
+                                        <td><span class="badge bg-success">Pagado</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-outline-primary">Ver CFDI</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>María López Hernández</td>
+                                        <td>2023002</td>
+                                        <td>Colegiatura Enero 2023</td>
+                                        <td>$5,000.00</td>
+                                        <td>18/01/2023</td>
+                                        <td><span class="badge bg-success">Pagado</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-outline-primary">Ver CFDI</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Carlos Rodríguez Martínez</td>
+                                        <td>2023003</td>
+                                        <td>Colegiatura Enero 2023</td>
+                                        <td>$5,000.00</td>
+                                        <td>20/01/2023</td>
+                                        <td><span class="badge bg-warning">Pendiente</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-outline-warning">Recordar Pago</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Control Administrativo y Financiero</h5>
+                    <p>Módulo 4 - Sistema de gestión integral</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Desarrollado por:<br>
+                    Miramontes Martñelarena Ana Gabriela<br>
+                    Larrea Holguín Brenda Lizeth<br>
+                    Lastiri Torres Sergio Eduardo<br>
+                    Loya Millán Jesús Daniel</p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p class="mb-0">© 2023 - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
